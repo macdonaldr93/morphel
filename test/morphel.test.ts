@@ -1,6 +1,6 @@
-import Morphel from '../src';
+import { Morphel } from '../src';
 
-describe('Morphel', () => {
+describe('index', () => {
   let container: Element;
 
   beforeEach(() => {

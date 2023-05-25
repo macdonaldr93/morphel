@@ -19,23 +19,31 @@ yarn add morphel
 The code below shows how to morph one `<div>` element to another `<div>` element and restore it.
 
 ```js
-import Morphel from 'morphel';
+import morphel from 'morphel';
 
 const el1 = document.createElement('div');
 el1.className = 'foo';
 
-const morphel = new Morphel(el1);
-
 const el2 = document.createElement('div');
 el2.className = 'bar';
 
-morphel.morph(el2);
+const instance = morphel(el1, el2);
 
 expect(el1.className).toEqual('bar');
 
-morphel.restore();
+instance.restore();
 
 expect(el1.className).toEqual('foo');
+```
+
+You can also use the `Morphel` class to setup many elements at once.
+
+```js
+import { Morphel } from 'morphel';
+
+const morphels = Array.from(document.querySelectorAll('.foo')).map(
+  el => new Morphel(el)
+);
 ```
 
 ## Commands
@@ -43,7 +51,9 @@ expect(el1.className).toEqual('foo');
 To run, use:
 
 ```bash
-npm start # or yarn start
+npm start
+# Or
+yarn start
 ```
 
 This builds to `/dist` and runs the project in watch mode so any edits you save inside `src` causes a rebuild to `/dist`.
