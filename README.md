@@ -1,5 +1,7 @@
 # Morphel
 
+![Build badge](https://github.com/macdonaldr93/morphel/actions/workflows/main.yml/badge.svg)
+
 All the credit and praise goes to [morphdom](https://github.com/patrick-steele-idem/morphdom) 🙏
 
 An addition to morphdom for restoring elements to original state.
