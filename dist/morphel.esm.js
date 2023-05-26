@@ -40,11 +40,13 @@ var Morphel = /*#__PURE__*/function () {
   var _proto = Morphel.prototype;
   _proto.morph = function morph(toNode, options) {
     morphdom(this.element, toNode, options);
+    return this;
   };
   _proto.restore = function restore() {
     if (this.originalHTML) {
       morphdom(this.element, this.originalHTML);
     }
+    return this;
   };
   _createClass(Morphel, [{
     key: "el",
@@ -55,5 +57,10 @@ var Morphel = /*#__PURE__*/function () {
   return Morphel;
 }();
 
-export default Morphel;
+function morphel(fromEl, toNode, options) {
+  return new Morphel(fromEl).morph(toNode, options);
+}
+
+export default morphel;
+export { Morphel };
 //# sourceMappingURL=morphel.esm.js.map
