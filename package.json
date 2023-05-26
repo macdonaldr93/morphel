@@ -1,6 +1,6 @@
 {
   "name": "morphel",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "An addition to morphdom for restoring elements to original state",
   "author": "Ryan Macdonald <hi@ryanmacdonald.ca>",
   "repository": "git@github.com:macdonaldr93/morphel.git",

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/macdonaldr93/morphel/compare/v0.2.0...v0.2.1) (2023-05-26)
+
+
+### Bug Fixes
+
+* remove type declaration from import ([24070dd](https://github.com/macdonaldr93/morphel/commit/24070ddbd0d1f072ecb1dccee2e0ccfb9101c63b))
+
 ## [0.2.0](https://github.com/macdonaldr93/morphel/compare/v0.1.4...v0.2.0) (2023-05-25)
 
 
